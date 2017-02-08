@@ -1,0 +1,10 @@
+public class GCD {
+    public static long gcd(long a, long b) {
+        while (b != 0) {
+            long tmp = a % b;
+            a = b;
+            b = tmp;
+        }
+        return a;
+    }
+}
